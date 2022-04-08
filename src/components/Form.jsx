@@ -22,6 +22,12 @@ const Form = ({ onChange, fuelValue, setFuelValue, fuelValues, conditionValue, s
                             Required!
                         </FormHelperText>
                     </FormControl>
+                    <FormControl sx={{ width: '25ch', marginTop: '10px' }}>
+                        <OutlinedInput placeholder="ImageURL:" id="carImage" />
+                        <FormHelperText>
+                            Image size must be (200x200)!
+                        </FormHelperText>
+                    </FormControl>
                     <TextField
                         id="outlined-select-currency"
                         select

@@ -25,7 +25,7 @@ const Form = ({ onChange, fuelValue, setFuelValue, fuelValues, conditionValue, s
                     <FormControl sx={{ width: '25ch', marginTop: '10px' }}>
                         <OutlinedInput placeholder="ImageURL:" id="carImage" />
                         <FormHelperText>
-                            Image size must be (200x200)!
+                            (Suggested image size: 200x200)
                         </FormHelperText>
                     </FormControl>
                     <TextField

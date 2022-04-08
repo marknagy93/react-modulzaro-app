@@ -24,7 +24,7 @@ const columns = (deleteElement) => {
             headerAlign: 'center',
             width: 200,
             editable: false,
-            renderCell: (params) => <img src={params.value} />
+            renderCell: (params) => <img width={200} height={200} style={{objectFit: 'cover'}} src={params.value} />
         },
         {
             field: 'brand',

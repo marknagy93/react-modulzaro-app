@@ -13,12 +13,15 @@ const columns = (deleteElement) => {
         {
             field: 'id',
             headerName: 'Id',
-            width: 180,
+            headerAlign: 'center',
+            width: 85,
+            align: 'center',
             editable: false
         },
         {
             field: 'imgUrl',
             headerName: 'Image',
+            headerAlign: 'center',
             width: 200,
             editable: false,
             renderCell: (params) => <img src={params.value} />
@@ -26,30 +29,41 @@ const columns = (deleteElement) => {
         {
             field: 'brand',
             headerName: 'Brand',
+            headerAlign: 'center',
             width: 220,
+            align: 'center',
             editable: true
         },
         {
             field: 'model',
             headerName: 'Model',
+            headerAlign: 'center',
             width: 220,
+            align: 'center',
             editable: true,
         },
         {
             field: 'fuel',
             headerName: 'Fuel',
+            headerAlign: 'center',
             width: 220,
+            align: 'center',
             editable: true,
         },
         {
             field: 'condition',
             headerName: 'Condition',
+            headerAlign: 'center',
             width: 180,
+            align: 'center',
             editable: true,
         },
         {
             field: 'delete',
             headerName: 'Delete',
+            headerAlign: 'center',
+            width: 120,
+            align: 'center',
             renderCell: (params) => (
                 <strong>
                     <Button

@@ -38,12 +38,12 @@ const AddCars = () => {
     useEffect(() => {
 
         if (firstFuel !== fuelValue) {
-            carToCreate['gasoline'] = fuelValue;
+            carToCreate['fuel'] = fuelValue;
         }
         setFirstFuel(fuelValue);
 
         if (firstCondition !== conditionValue) {
-            carToCreate['new'] = conditionValue;
+            carToCreate['condition'] = conditionValue;
         }
         setFirstCondition(conditionValue);
 

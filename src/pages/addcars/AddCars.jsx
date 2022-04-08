@@ -53,6 +53,7 @@ const AddCars = () => {
         const mapNameToProperty = {
             carBrand: 'brand',
             carModel: 'model',
+            carImage: 'imgUrl',
         };
 
         const property = mapNameToProperty[id];

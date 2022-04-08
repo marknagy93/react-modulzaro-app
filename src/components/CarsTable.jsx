@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 const CarsTable = ({ rows, edit, deleteElement }) => (
     <div style={{ height: 300, width: '100%' }}>
-        <DataGrid style={{backgroundColor: "rgb(255,255,255, 0.8"}} autoHeight rows={rows} columns={columns(deleteElement)} onCellEditCommit={edit} />
+        <DataGrid style={{backgroundColor: "rgb(255,255,255, 0.8"}} rowHeight={200} autoHeight rows={rows} columns={columns(deleteElement)} onCellEditCommit={edit} />
     </div>
 );
 
@@ -15,6 +15,13 @@ const columns = (deleteElement) => {
             headerName: 'Id',
             width: 180,
             editable: false
+        },
+        {
+            field: 'imgUrl',
+            headerName: 'Image',
+            width: 200,
+            editable: false,
+            renderCell: (params) => <img src={params.value} />
         },
         {
             field: 'brand',

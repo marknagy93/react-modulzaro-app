@@ -101,6 +101,7 @@ const Cars = () => {
         else if (valueChange.field === 'condition') {
             correctConditionValues.includes(valueChange.value)
                 && updateCarData(requestBody, valueChange.id);
+
         } else {
             updateCarData(requestBody, valueChange.id);
         }

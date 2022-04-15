@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 const CarsTable = ({ rows, edit, deleteElement }) => (
     <div style={{ height: 300, width: '100%' }}>
-        <DataGrid style={{backgroundColor: "rgb(255,255,255, 0.8"}} rowHeight={200} autoHeight rows={rows} columns={columns(deleteElement)} onCellEditCommit={edit} />
+        <DataGrid style={{backgroundColor: "rgb(230,230,230, 0.9"}} rowHeight={200} autoHeight rows={rows} columns={columns(deleteElement)} onCellEditCommit={edit} />
     </div>
 );
 
@@ -30,7 +30,7 @@ const columns = (deleteElement) => {
             field: 'brand',
             headerName: 'Brand',
             headerAlign: 'center',
-            width: 220,
+            width: 150,
             align: 'center',
             editable: true
         },
@@ -38,15 +38,23 @@ const columns = (deleteElement) => {
             field: 'model',
             headerName: 'Model',
             headerAlign: 'center',
-            width: 220,
+            width: 150,
             align: 'center',
             editable: true,
+        },
+        {
+            field: 'year',
+            headerName: 'Year',
+            headerAlign: 'center',
+            width: 150,
+            align: 'center',
+            editable: false,
         },
         {
             field: 'fuel',
             headerName: 'Fuel',
             headerAlign: 'center',
-            width: 220,
+            width: 150,
             align: 'center',
             editable: true,
         },
@@ -54,7 +62,7 @@ const columns = (deleteElement) => {
             field: 'condition',
             headerName: 'Condition',
             headerAlign: 'center',
-            width: 180,
+            width: 150,
             align: 'center',
             editable: true,
         },

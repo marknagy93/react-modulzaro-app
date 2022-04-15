@@ -47,13 +47,14 @@ const AddCars = () => {
         }
         setFirstCondition(conditionValue);
 
-    }, [firstFuel, fuelValue, firstCondition, conditionValue]);
+    }, [firstFuel, fuelValue, firstCondition, conditionValue,]);
 
     const gatheringInfoAboutCar = ({ target: { id, value, checked } }) => {
         const mapNameToProperty = {
             carBrand: 'brand',
             carModel: 'model',
             carImage: 'imgUrl',
+            carYear: 'year',
         };
 
         const property = mapNameToProperty[id];
